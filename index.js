@@ -14,7 +14,8 @@ const path =require("path");
  app.use(cors());
  const io=new Server(server,{
      cors:{
-         origin:"http://localhost:3000/"
+         origin:"http://localhost:3000/",
+         allowedHeaders: ["Access-Control-Allow-Origin"]
      }
  })
 
